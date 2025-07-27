@@ -57,26 +57,6 @@ The front-end is developed using HTML, CSS and JavaScript. The website was divid
 
 <img src="https://github.com/Radhasingh95/FakeNewsProject/blob/main/Website_images/statistics.PNG" width="600" height="350" />
 
-- **About Us**: A small introduction to the developing team along with links to their socials.
-- **Contact Us**: Since this is a research project, feedback is really important. Filling the form would send each member of development team an email with details of sender and feedback.
-
-<img src="https://github.com/Radhasingh95/FakeNewsProject/blob/main/Website_images/contact%20us.PNG" width="600" height="350" />
-
-### Back-end Development
-
-The front end of the website was integrated with the prediction code using a python module named flask. The python file constantly runs in the background to enable computing on the website. The flask file has the following components: 
-- Setting up constants and importing modules: The model is unpickled to enable prediction. Necessary modules are imported.
-- Looking for inputs from website: The file keeps waiting for inputs from any text box to take necessary action.
-- Text Cleaning and Encoding for Prediction: Once the user enters content, the text is tokenized and encoded using same principles mentioned in Section 2.2. 
-- Text Prediction: The model then takes the input encoded text and predicts based on its learning during the training phase. This predicted value (0 or 1) is then returned to the front end where it is beautifully displayed.
-- Web Scraping: if a user enters a URL, the goose() object will then scrape all necessary text which is then sent for encoding and prediction as discussed in 3 and 4. 
-- Contact Us: This code snippet looks for inputs in the contact us form, then sends an E-Mail to all the developers of this project using the flask_mail object.
-
-### Analysing and visualising trends on the website
-
-To introduce users to various trends observed in the spread of fake news, data was obtained from statistical websites which was then visualised using matplotlib and seaborn python modules. These graphs were saved and used by the front end of the website.
-
-You can view the file here: [https://github.com/Radhasingh95/FakeNewsProject/blob/main/Statistics.ipynb]
 
  
 ## How to Run the Code
